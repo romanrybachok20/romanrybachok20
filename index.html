@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>УБМ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Навігаційне меню -->
+  <nav>
+    <div class="title">
+        <h1>Управління</h1>
+        <h1>будівництвом</h1>
+        <h1>міста</h1>
+    </div>
+    <ul class="nav-menu">
+        <li><a href="#city">Моє місто</a></li>
+        <li><a href="#construction">Будівництво</a></li>
+        <li><a href="#resources">Ресурси міста</a></li>
+    </ul>
+</nav>
+
+  <!-- Розділ Моє місто -->
+  <div id="city">
+    <h1 class="zagolovki">Моє місто</h1>
+    <div class="wrapper">
+        <div class="map-container">
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+            <div class="map-cell"></div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Розділ Будівництво -->
+  <div id="construction">
+    <h1 class="zagolovki">Будівництво</h1>
+    <form>
+        <label>Виберіть потрібний матеріал:</label><br><br>
+      
+        <div class="material-container">
+          <div>
+            <input type="radio" id="material1" name="material1" value="Цегла">
+            <label for="material1">Цегла</label><br>
+            <input type="number" id="amount1" name="amount1" placeholder="К-ть"><br>
+          </div>
+          
+          <div>
+            <input type="radio" id="material2" name="material2" value="Пісок">
+            <label for="material2">Пісок</label><br>
+            <input type="number" id="amount2" name="amount2" placeholder="К-ть"><br>
+          </div>
+          
+          <div>
+            <input type="radio" id="material3" name="material3" value="Бетон">
+            <label for="material3">Бетон</label><br>
+            <input type="number" id="amount3" name="amount3" placeholder="К-ть"><br>
+          </div>
+          
+          <div>
+            <input type="radio" id="material4" name="material4" value="Дерево">
+            <label for="material4">Дерево</label><br>
+            <input type="number" id="amount4" name="amount4" placeholder="К-ть"><br>
+          </div>
+          
+          <div>
+            <input type="radio" id="material5" name="material5" value="Метал">
+            <label for="material5">Метал</label><br>
+            <input type="number" id="amount5" name="amount5" placeholder="К-ть"><br>
+          </div>
+        </div>
+      
+        <label for="workers">Кількість будівельників:</label><br>
+        <input type="number" id="workers" name="workers"><br><br>
+      
+        <button type="submit">Додати об'єкт</button>
+      </form>
+      
+  </div>
+
+  <!-- Розділ Ресурси міста -->
+  <div class="resources">
+    <h1 class="zagolovki">Ресурси міста</h1>
+    <div id="resources">
+    <p>Бюджет міста: <span id="budget">1000000</span> грн</p>
+    <p>Матеріали доступні місту:</p>
+    <ul>
+      <li>Цегла: <span id="bricks">1000</span> одиниць</li>
+      <li>Пісок: <span id="sand">800</span> одиниць</li>
+      <li>Бетон: <span id="concrete">1200</span> одиниць</li>
+      <li>Дерево: <span id="wood">500</span> одиниць</li>
+      <li>Метал: <span id="metal">1500</span> одиниць</li>
+    </ul>
+    <p>Кількість будівельників: <span id="workers-count">185</span></p>
+  </div>
+
+  <footer>
+    <p>&copy;by Roman Rybachok</p>
+  </footer>
+</body>
+</html>

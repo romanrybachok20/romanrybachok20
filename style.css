@@ -1,0 +1,333 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    background-image: url('/images/brick-2886231_1280.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #333;
+    line-height: 1.7;
+    letter-spacing: 0.5px; 
+    transition: background-color 0.3s ease;
+}
+
+.zagolovki {
+    text-align: center;
+    max-height: 250px;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
+    max-width: 500px; 
+    width: 100%; 
+    margin: 0 auto; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Навігація */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 20px 40px;
+    border-bottom: 2px solid #000000;
+    font-weight: 500;
+}
+
+nav .title h1 {
+    font-size: 32px; 
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* ВСІ БУКВИ ВЕЛИКІ */
+}
+
+nav .nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav .nav-menu li {
+    margin-left: 20px;
+}
+
+nav .nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+    letter-spacing: 0.5px;
+    background-color: #4fa7b3;
+}
+
+nav .nav-menu li a:hover {
+    background-color: #444;
+    color: #1e90ff;
+}
+
+/* Заголовки */
+.title h1 {
+    text-align: left;
+    color: #ffffff;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 28px; 
+    letter-spacing: 1px; 
+}
+
+h1 {
+    font-size: 36px; 
+}
+
+/* Карта */
+.wrapper {
+    width: 1280px;
+    height: 700px;
+    margin: 0 auto;
+    overflow: auto;
+    border: 5px solid #000000;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+    display: grid;
+    grid-template-columns: repeat(100, 70px);
+    grid-template-rows: repeat(100, 70px);
+    grid-gap: 1px;
+}
+
+.map-cell {
+    background-color: lightblue;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.map-cell:hover {
+    background-color: #00bfff;
+}
+
+/* Форма */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    margin: 30px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+form label {
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+
+form input[type="number"], form input[type="radio"] {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="number"]:focus, form input[type="radio"]:focus {
+    border-color: #1e90ff;
+    background-color: #f0f8ff;
+}
+
+form button {
+    background-color: #4CAF50;
+    width: auto;
+    height: 70px;
+    color: rgb(253, 253, 253);
+    padding: 12px;
+    border: 3px solid rgb(25, 130, 27);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 32px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+form button:hover {
+    background-color: #45a049;
+    transform: scale(1.03);
+}
+
+form button:active {
+    transform: scale(1);
+}
+
+#resources {
+    background-color: rgb(255, 255, 255); 
+    padding: 25px; 
+    margin: 30px auto; 
+    width: 90%; 
+    max-width: 1280px; 
+    border-radius: 10px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+}
+
+#resources p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #2a2a2a; 
+}
+
+footer {
+    text-align: center;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 30px 20px;
+    font-size: 16px;
+    margin-top: 50px;
+    border-top: 2px solid #333;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Стилі для контейнерів матеріалів */
+.material-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.material-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+}
+
+.material-container input[type="number"] {
+    width: 50%;
+    margin-top: 5px;
+}
+
+#workers {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    #workers, #resources {
+        width: 90%; 
+        margin: 40px auto; /
+    }
+
+    #resources {
+        padding: 25px; 
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px; 
+    }
+
+    nav .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav .nav-menu li {
+        margin-left: 0; 
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    nav .title h1 {
+        font-size: 28px; 
+    }
+
+    h1 {
+        font-size: 32px; 
+    }
+
+    /* Зменшення розміру ігрового поля */
+    .wrapper {
+        width: 90%; 
+        height: 300px; 
+        margin: 20px auto; 
+    }
+
+    .map-container {
+        grid-template-columns: repeat(100, 30px); 
+        grid-template-rows: repeat(100, 30px); 
+    }
+
+    .map-cell {
+        width: 30px; 
+        height: 30px; 
+    }
+
+    .map-cell:hover {
+        background-color: #00bfff; 
+    }
+
+    form {
+        width: 90%; 
+        padding: 15px; 
+    }
+
+    form input[type="number"], form input[type="radio"] {
+        font-size: 14px; 
+    }
+
+    form button {
+        font-size: 24px; 
+        padding: 10px; 
+    }
+
+    .material-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .material-container div {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    footer {
+        padding: 20px 10px;
+        font-size: 14px; 
+    }
+}
+
+
